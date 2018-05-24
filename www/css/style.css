@@ -1,0 +1,470 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; 
+}
+
+#homePage {
+  width: 100%;
+  height: 100%; 
+  background-image: url('../image/header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#loginPage{
+  width: 100%;
+  height: 100%; 
+  background-color: #F5F5F5; 
+  text-align: center;
+}
+
+#separador_home{
+  width: 50px;
+  border-width: 3px;
+  border-color: #F05F40;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#lista_home, #lista_home_last, #lista_home_utilizadorNome{
+    display: inline;
+    margin: 20px;
+}
+
+#lista_home a, #lista_home_last a{
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#lista_home_utilizadorNome a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+#titulo, #voltar{
+    width: fit-content;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 50px;   
+    font-size: 20px;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+}
+
+#mainNav{
+    text-align: center;
+}
+
+#topBox{    
+    width: 90%;
+    margin: 25px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#navBar{
+    display: block;
+    float: right;
+}
+
+#menu_home{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+    font-size: 15px;
+}
+
+#menu_perfil{
+    list-style-type: none;  
+    display: inline-block;
+    padding: 0;
+}
+
+#menu_perfil li{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#chamativo{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#descricao{
+    font-family: 'Merriweather';
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+}
+
+#parent{
+    height: 96%;
+    width: 35%;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+#childIniciarSessao{    
+    width: 80%;
+    height: 60%;  
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+}
+
+#childCriarConta{    
+    width: 80%;
+    height: 90%;  
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+}
+
+#formulario_iniciarSessao, #formulario_criarConta{ 
+    width: 100%;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#campo_nome,#campo_email, #campo_password,#campo_password2, #campo_data, #campo_alcunha{
+    width: calc(100% - 23px);
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-color: #696969;
+    border-style: ridge;
+    border-width: 1px;
+    color: #ADADAD;
+}
+
+#texto1{
+    padding: 10px;
+    color: #F05F40;
+    font-weight: bold;
+}
+
+#label1{
+    text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+}
+
+#submit{
+    height: 50px;
+    width: 60%;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F05F40;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#ancoraNovaConta, #ancoraIniciarSessao{
+    padding: 5px;
+    color: #F05F40;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F05F40;
+}
+
+#imagem_utilizador_home{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;    
+    padding-right: 10px;
+}
+
+#imagem_utilizador_perfil{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 10px;
+}
+
+#imagem_utilizador_perfil2{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+}
+
+#top_bar{
+    width: 100%;
+    height: 8%;
+    background-color: #F05F40;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;  
+    display: inline-block;  
+}
+
+#container_left{    
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+#container_right{
+    width: 18%;
+    height: 100%;
+    display: block;
+    float: right;
+}
+
+#principal{
+    width: 100%;
+    height: 91.4%;
+}
+
+#divisoes{
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 100px; 
+}
+
+#divisao1{
+    width: 20%;
+    height: 65%;
+    margin: 5px;
+    background-color:#8FBC8F;    
+    display: inline-block;
+    text-decoration: none;
+}
+
+#divisao2{
+    width: 20%;
+    height: 65%;
+    margin: 5px;
+    background-color: #A52A2A;    
+    display: inline-block;
+    text-decoration: none;
+}
+
+#divisao3{
+    width: 20%;
+    height: 65%;
+    margin: 5px;
+    background-color: #008B8B;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#divisao4{
+    width: 20%;
+    height: 65%;
+    margin: 5px;
+    background-color: #F4A460;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#perfil, #portfolio, #criarPortfolio, #editarPortfolio{
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+}
+
+#opcoes_perfil{
+    height: 80%;
+    width: 15%;
+    margin: 20px;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    float: left;
+}
+
+#lista_perfil{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#conteudo{   
+    margin: 20px; 
+    width: 75%;
+    height: 80%;
+    float: left;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+#perfil_logout{
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    margin-right: 5px;
+    margin-left: 5px; 
+    text-decoration: none;
+}
+
+#subtitulos{
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+#centrar{
+    display: inline-block;
+}
+
+#perfil_nome, #perfil_email, #perfil_password, #perfil_data, #perfil_universidade, #perfil_curso{
+    display: inline-block;
+    width: 25%;
+    height: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#utilizador1{
+    margin: 0 auto;
+    width: 40%;
+    padding: 20px;
+}
+
+#utilizador_nome2{
+    margin: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#user_foto{
+    width: 70%;
+    height: 90%;
+    margin: 10px;
+    margin-left: 30px;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+#descritivos{
+    display: inline;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: #C0C0C0;
+}
+
+#voltar{
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 50px;   
+    font-size: 20px;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#caixa{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #F05F40;
+}
+
+#caixa2{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    margin-top: 60px;
+    border-radius: 50%;
+    background: #F05F40;
+}
+
+#editar_foto, #editar_perfil, #editar_password, #editar_email, #confirmar_alteracoes, #cancelar_alteracoes{
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+#alteracao_password, #alteracao_dados_pessoais{
+    display:none;
+}
+
+#cmp_password_old, #cmp_password_new, #cmp_password_confirm{
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-color: #696969;
+    border-style: ridge;
+    border-width: 1px;
+    color: #ADADAD;
+}
+
+#editar_nome, #editar_data, #editar_universidade, #editar_curso{
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-color: #696969;
+    border-style: ridge;
+    border-width: 1px;
+    color: #ADADAD;
+    display: inline-block;
+}
