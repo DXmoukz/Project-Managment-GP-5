@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div>
+        <p>Criar Portfolio</p>
+        <div>
+            <form action="/insertIntoPorfolio" method="POST">
+                <input id="demo1" type="hidden" name="user" value="">
+                <div id="pagina1">
+                    <fieldset>
+                        <legend>Dados Portfolio:</legend>
+                        <br>
+                        <label id="label2">Titulo do Portfolio</label>
+                        <br>
+                        <input type="text" name="tituloPortfolio" id="campo_tituloPortfolio">
+                        <br>
+                        <label id="label2">Descrição</label>
+                        <br>
+                        <textarea rows="5" cols="50" name="descricao" id="campo_descricao"></textarea>
+                        <br>
+                        <label id="label3">Motivações</label>
+                        <br>
+                        <textarea rows="5" cols="50" name="motivacoes" id="campo_motivacoes"></textarea>
+                        <br>
+                        <label id="label4">Areas Cientificas</label>
+                        <select name="selectArea" id="campo_selectArea" multiple></select>
+                        <br>
+                        <label id="label4">Tipo de Partilha</label>
+                        <select name="selectPartilha" id="campo_selectPartilha">
+                            <option value="Public">Public</option>
+                            <option value="Private"> Private</option>
+                            <option value="Protected">Protected</option>
+                        </select>
+                        <br>
+                        <br>
+                        <a href="#" onclick="mostrarElementosEquipaInput()">Tem Equipa?</a>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset id="fieldsetTemEquipa" style="display: none">
+                        <legend>Dados Adicionais - Equipa</legend>
+                        <br>
+                        <label id="">Elemento 1</label>
+                        <p>Nome:
+                            <input type="text" name="nomeElem1" id="capo_nomeElem1">
+                        </p>
+                        <p>Email:
+                            <input type="text" name="emailElem1" id="capo_emailElem1">
+                        </p>
+                        <p>Telefone:
+                            <input type="text" name="teleElem1" id="capo_teleElem1">
+                        </p>
+                        <br>
+                        <label id="">Elemento 2</label>
+                        <p>Nome:
+                            <input type="text" name="nomeElem2" id="capo_nomeElem2">
+                        </p>
+                        <p>Email:
+                            <input type="text" name="emailElem2" id="capo_emailElem2">
+                        </p>
+                        <p>Telefone:
+                            <input type="text" name="teleElem2" id="capo_teleElem2">
+                        </p>
+                        <br>
+                        <label id="">Elemento 3</label>
+                        <p>Nome:
+                            <input type="text" name="nomeElem3" id="capo_teleElem3">
+                        </p>
+                        <p>Email:
+                            <input type="text" name="emailElem3" id="capo_teleElem3">
+                        </p>
+                        <p>Telefone:
+                            <input type="text" name="teleElem3" id="capo_teleElem3">
+                        </p>
+                    </fieldset>
+                    <input type="button" value="Seguinte" onclick="javascript:criarPortfolioPagina2()">
+                </div>
+            </form>
+            <form action="/uploadDados" method="POST" enctype="multipart/form-data">
+                <div id="pagina2" style="display: none">
+                    <input id="demo" type="hidden" name="user" value="">
+                    <input id="demo3" type="hidden" name="titulo" value="">
+                    <label id="label6">Documentos</label>
+                    <input type="file" name="doctoupload" accept=".doc,.pdf,.docx,.ppt,.xlsx,.pptx,.xls" multiple>
+                    <br>
+                    <label id="label7">Videos</label>
+                    <input type="file" name="videotoupload" accept="video/*" multiple>
+                    <br>
+                    <label id="label8">Imagens</label>
+                    <input type="file" name="imagetoupload" accept="image/*" multiple>
+                    <br>
+                    <input type="submit">
+            </form>
+            </div>
+            <script>
+                document.getElementById("demo").value = (JSON.parse(localStorage.getItem("user")).alcunha);
+                document.getElementById("demo1").value = (JSON.parse(localStorage.getItem("user")).userID);
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
