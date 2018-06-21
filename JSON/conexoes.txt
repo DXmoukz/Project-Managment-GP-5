@@ -1,0 +1,10 @@
+{
+    //"host": "eu-cdbr-west-02.cleardb.net",
+    //"user": "b21ae827238a48",
+    //"password": "4d5af230",
+    //"database": "heroku_a89ca2e75c77938"
+	"host": "localhost",
+    "user": "root",
+    "password": "redondos137",
+    "database": "GestorPortfolios"
+}

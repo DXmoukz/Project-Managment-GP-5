@@ -1,0 +1,250 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;     
+  background-image: url('/image/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#parent{
+    height: 96%;
+    width: 35%;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+#formulario_iniciarSessao{ 
+    margin:0 auto;  
+    height: auto;
+    padding-top: 30%;
+    padding-bottom: 5%;
+    width: calc(80% - 23px);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#campo_email, #campo_password{
+    width: calc(100% - 23px);
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-color: #696969;
+    border-style: ridge;
+    border-width: 1px;
+    color: #ADADAD;
+}
+
+#texto1{
+    padding: 10px;
+    color: #F05F40;
+    font-weight: bold;
+}
+
+#label1{
+    text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+}
+
+#submit{
+    height: 50px;
+    width: 60%;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F05F40;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ancoraNovaConta, #ancoraIniciarSessao{
+    padding: 5px;
+    color: #F05F40;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#titulo{
+    width: fit-content;
+    margin-left: 50px;  
+    margin-top: 20px; 
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    float: left;
+    text-transform: uppercase;
+}
+
+#home{
+  color: #696969;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#home:hover{
+    color: #F05F40;
+}
+
+#box{
+    height: 55%;
+    width: 40%;
+    text-align: center;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    display: block;
+}
+
+#botao_comecar{
+    height: 50px;
+    width: 25%;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F05F40;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;    
+    margin: 5px 5px 5px 5px;
+}
+
+#check{
+    height: 80px;
+    width: 80px;
+    margin: 15px 5px 5px 5px;
+}
+
+#sucesso{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#texto{
+    font-family: 'Merriweather';
+    color: #696969;
+    font-size: 17px;
+}
+
+
+#opcoes{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding-top: 10px;
+}
+
+#opcao1{
+    display: inline-block;
+    background-color: #F05F40;
+    height: auto;
+    padding: 12px;
+    width: 25%; 
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    text-decoration: none;
+    background-color: #F05F40;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#opcao2{
+    display: inline-block;
+    background-color: #F05F40;
+    height: auto;
+    width: 25%; 
+    padding: 12px;   
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    text-decoration: none;
+    background-color: #F05F40;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#sucesso{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#texto3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mensagem{
+    width: 100%;
+    height: 80%;
+}
+
+#box{
+    height: 55%;
+    width: 40%;
+    text-align: center;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    display: block;
+}
+
+#botaoRejeitarFinal{
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F05F40;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#opcao1:hover, #opcao2:hover{
+   color: #fff;  
+}
+
+#submit:hover{
+   color: #f69f8c;  
+}

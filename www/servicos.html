@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-120931085-1');
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div id="homePage">
+        <!-- Barra de Navegacao -->
+        <nav id="mainNav">
+            <div id="topBox">
+                <div id="titulo"><a id="home" href="index.html">PortfoliU</a></div>
+                <ul id="menu_home">
+                    <li id="lista_home"><a id="home" href="servicos.html">Serviços</a></li>
+                    <li id="lista_home"><a id="home" href="procurarPortfolios.html">Portfolios</a></li>
+                    <li id="lista_home"><a id="home" href="estatisticas.html">Estatisticas</a></li>
+                    <li id="lista_home"><a id="home" href="contactos.html">Contactos</a></li>
+                    <li id="lista_home_especial"><a id="criar" href="javascript: portfolios();">Criar Portfólio</a></li>
+                    <li id="lista_home_last">
+                        <a id="iniciar" href="login.html">Inicie Sessão</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="apresentacao">
+            <h1 id="chamativo2">
+                <strong>O que disponibiliza-mos?</strong>
+            </h1>
+            <p id="descricao">O nosso grande objetivo é disponibilizar a criação de portfólios dinâmicos, que se ajustem ao que cada utilizador
+                necessita com adição de dados pessoais e ferramentas como documentos, imagens e videos.
+            </p>
+            <div id="opcoes">
+                <a id="opcao1" href="servicos.html#documentos">Documentos</a>
+                <a id="opcao2" href="servicos.html#protecao_dados">Proteção de Dados</a>
+                <a id="opcao3" href="servicos.html#faqs">Faqs</a>
+            </div>
+        </div>
+    </div>
+    <div id="documentos">
+        <div>
+            <h1 id="titulo_principal">Ferramentas</h1>
+            <p id="descricao_docs">Para a criação dos nossos portfólios dinâmicos disponibiliza-mos as seguintes ferramentas...</p>
+            <h2 id="titulo_secundario">Documentos</h2>
+            <img id="doc" src="/image/servicos_documentos.png">
+            <div>
+                <div id="ser_imagem">
+                    <h2 id="titulo_secundario">Imagens</h2>
+                    <img id="img" src="/image/servicos_imagens.png">
+                </div>
+                <div id="ser_video">
+                    <h2 id="titulo_secundario">Videos</h2>
+                    <img id="img" src="/image/servicos_video.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="protecao_dados">
+        <h1 id="titulo_protecao">Proteção de Dados</h1>
+        <p id="descricao_protecao">Esta nova legislação, que entrou em vigor no passado dia 25 de Maio de 2018, atualiza a lei de proteção de dados
+            anteriormente em vigor e atribui novas normas de segurança para a maneira como os dados são utilizados na internet.</p>
+        <a target="Blank" href="/documentos/regulamentoProtecaoDados.pdf" title="regulamentoProtecaoDados.pdf">
+            <img id="img" src="/image/pdf.png">
+        </a>
+        <p id="legenda">Documento na integra</p>
+    </div>
+
+    <div id="faqs">
+        <h1 id="titulo_faq">Faqs</h1>
+        <p id="pergunta"><span>Q1: </span>O que é um portfólio?</p>
+        <p id="resposta"><span>R1: </span>Um portfólio consiste num relatório e nos seus ficheiros adicionais de um projeto de final de curso
+            ou estágio, podendo conter vídeos, fotos e documentos adicionais (word, pdf, pptx, etc.)</p>
+        <p id="pergunta"><span>Q2: </span>Como posso fazer o registo no site?</p>
+        <p id="resposta"><span>R2: </span>Na página inicial do site existirá uma aba no canto superior direito cujo nome é “Iniciar Sessão”,
+            ao clicar será redirecionado para a pagina de inicio de sessão, caso já tenha uma conta bastará iniciar a sessão
+            com os seus dados pessoais, caso contrário, existe um link na pagina de login de seu nome “Crie uma conta” que
+            abre a pagina de registo do site, bastará preencher os campos necessários e criar a sua conta.</p>
+        <p id="pergunta"><span>Q3: </span>Como posso aceder a um portfólio?</p>
+        <p id="resposta"><span>R3: </span>O site tem na sua página inicial uma aba “Portfólios” que abre uma página com todos os portfólios
+            presentes no site, do lado esquerdo existirá uma zona de pesquisa com as áreas científicas dos portfólios, que
+            ajudará a filtrar os portfólios a mostrar.</p>
+        <p id="pergunta"><span>Q4: </span>Como posso publicar um portfólio?</p>
+        <p id="resposta"><span>R4: </span>Este processo pode ser feito de duas maneiras, diretamente a partir da pagina principal onde existirá
+            uma aba dedicada para esta função. A segunda forma será depois de ser iniciada sessão, haverá um menu chamado
+            “Criar portfólio”, esse menu terá uma ligação para a pagina com todos os requisitos para a criação de um portfólio.</p>
+        <p id="pergunta"><span>Q5: </span>Como posso contactar o suporte?</p>
+        <p id="resposta"><span>R5: </span>A partir da pagina inicial haverá uma aba no menu chamada de “Contactos”, esta aba irá remeter para
+            a pagina que contem todos os contactos do site.</p>
+    </div>
+</body>
+
+</html>

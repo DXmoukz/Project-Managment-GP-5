@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120931085-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="./css/registo.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div id="titulo"><a id="home" href="index.html">PortfoliU</a></div>
+    <div id="parent">
+        <form id="formulario_criarConta">
+            <br>
+            <label id="label1">Criar Conta</label>
+            <br>
+            <br>
+            <div class="tooltip">
+                <input placeholder="NOME" id="campo_nome" name="nome" type "text">
+                <span class="tooltiptext">Insira o nome</span>
+            </div>
+            <br>
+            <div class="tooltip">
+                <input placeholder="ALCUNHA" id="campo_alcunha" name="alcunha" type "text">
+                <span class="tooltiptext">Insira a sua alcunha de utilizador</span>
+            </div>
+            <br>
+            <div class="tooltip">
+                <input placeholder="DD-MM-AAAA" id="campo_data" name="dataNasc" type="date">
+                <span class="tooltiptext">Insira data de nascimento no formato DD-MM-AAAA</span>
+            </div>
+            <br>
+            <div class="tooltip">
+                <input placeholder="EMAIL" id="campo_email" name="email" type="email">
+                <span class="tooltiptext">Insira email no formato *****@*****.com</span>
+            </div>
+            <br>
+            <div class="tooltip">
+                <input placeholder="TELEFONE" id="campo_telefone" name="telefone" type="text" maxlength="9" minlength="9">
+                <span class="tooltiptext">Insira um numero de telefone de 9 digitos</span>
+            </div>
+            <br>
+            <div class="tooltip">
+                <input placeholder="PASSWORD" id="campo_password" name="password" type="password">
+                <span class="tooltiptext">Insira novamente a password</span>
+            </div>
+            <br>
+            <div class="tooltip">
+                <input placeholder="REPETIR PASSWORD" id="campo_password2" type="password">
+                <span class="tooltiptext">Insira novamente a password</span>
+            </div>
+            <br>
+            <p id="termosEcondicoes">
+                Ao clicar Criar Conta, você concorda com os nossos
+                <a id="termos" href="servicos.html#protecao_dados" target="blank">Termos e condições</a> e leu as nossas
+                politicas de uso de dados.
+            </p>
+            <input id="submit" type="button" value="Criar Conta" onclick="javascript:registoUtilizador()">
+            <p id="registoFalhado"></p>
+            <p id="novaConta">
+                Tem uma conta PortfoliU?
+                <a id="ancoraIniciarSessao" href="login.html">Inicie Sessão</a>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120931085-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div id="top_bar">
+        <div id="container_left">
+            <a id="voltar" href="javascript: voltarPerfil()">Voltar</a>
+        </div>
+        <div id="container_right">
+            <img id="imagem_utilizador_perfil">
+            <a id="utilizador_nome"></a>
+            <a id="perfil_logout" href="javascript: apagar();">Logout</a>
+        </div>
+    </div>
+    <h1 id="titulo">
+        <strong>Criar Portfolio</strong>
+    </h1>
+    <div id="parent">
+        <form action="/insertIntoPorfolio" method="POST">
+            <input id="demo1" type="hidden" name="user" value="">
+            <p>Dados Portfolio:</p>
+            <div id="pagina1">
+                <div id="groups">
+                    <label id="label">Titulo do Portfolio</label>
+                    <div class="tooltip">
+                    <input type="text" name="tituloPortfolio" id="campo_tituloPortfolio">
+                    <span class="tooltiptext">Insira o nome para o seu portfolio. ex:"O meu estágio"</span>
+                    </div>
+                    <br>
+                </div>
+                <div id="groups">
+                    <label id="label">Descrição</label>
+                    <div class="tooltip">
+                    <textarea rows="5" cols="50" name="descricao" id="campo_descricao"></textarea>
+                    <span class="tooltiptext">Insira a descrição do seu projeto/estágio</span>
+                    </div>
+                    <br>
+                </div>
+                <div id="groups">
+                    <label id="label">Motivações</label>
+                    <div class="tooltip">
+                    <textarea rows="5" cols="50" name="motivacoes" id="campo_motivacoes"></textarea>
+                    <span class="tooltiptext">Descreva as motivações que o levaram a realizar este
+                        estágio/projeto
+                    </span>
+                    </div>
+                    <br>
+                </div>
+                <div id="groups">
+                    <label id="label">Areas Cientificas</label>
+                    <div class="tooltip">
+                    <select name="selectArea" id="campo_selectArea" multiple></select>
+                    <span class="tooltiptext">Selecione area cientifica correspondente ao seu portfolio</span>
+                    </div>
+                    <br>
+                </div>
+                <div id="groups">
+                    <label id="label">Tipo de Partilha</label>
+                    <div class="tooltip">
+                    <select name="selectPartilha" id="campo_selectPartilha">
+                            <option value="Publico">Publico</option>
+                            <option value="Privado"> Privado</option>
+                            <option value="Protegido">Protegido</option>
+                        </select>
+                        <span class="tooltiptext">Terá 3 opçoes: Publico que poderá ser visualizado por
+                            todos os utilizadores, Privado ficará em standby, Protegido estará apenas 
+                            disponivel para um conjunto de utilizadores selecionados
+                        </span>
+                    </div>
+                    <br>
+                </div>
+                <a id="ancora" href="#" onclick="mostrarElementosEquipaInput()">Tem Equipa?</a>
+                <br>
+                <br>
+                <fieldset id="fieldsetTemEquipa" style="display: none">
+                    <p>Dados Adicionais - Equipa</p>
+                    <input id="btn" type="button" value="Novo Membro" onclick="javascript:criarNovoMembro()">
+                </fieldset>
+                <input id="botao_seguinte" type="button" value="Seguinte" onclick="javascript:criarPortfolioPagina2()">
+            </div>
+        </form>
+        <form action="/uploadDados" method="POST" enctype="multipart/form-data">
+            <div id="pagina2" style="display: none">
+                <input id="demo" type="hidden" name="user" value="">
+                <input id="tituloPorfolio" type="hidden" name="titulo" value="">
+                <input id="userEmail" type="hidden" name="email" value="">
+                <div id="groups">
+                    <label id="label6">Documentos</label>
+                    <div class="tooltip">
+                        <input type="file" name="doctoupload" accept=".doc,.pdf,.docx,.ppt,.xlsx,.pptx,.xls" multiple>
+                        <span class="tooltiptext">Deverá inserir o ficheiro do relatório final com o nome "final.pdf"</span>
+                    </div>
+                </div>
+                <div id="groups">
+                    <label id="label7">Videos</label>
+                    <div class="tooltip">
+                    <input type="file" name="videotoupload" accept="video/*" multiple>
+                    <span class="tooltiptext">Insira imagens do seu projeto/estágio</span>
+                    </div>
+                </div>
+                <div id="groups">
+                    <label id="label8">Imagens</label>
+                    <div class="tooltip">
+                    <input type="file" name="imagetoupload" accept="image/*" multiple>
+                    <span class="tooltiptext">Insira videos do seu projeto/estágio</span>
+                    </div>
+                </div>
+                <input id="botao_seguinte" type="submit">
+        </form>
+        </div>
+        <script>
+            document.getElementById("demo").value = (JSON.parse(localStorage.getItem("user")).alcunha);
+            document.getElementById("demo1").value = (JSON.parse(localStorage.getItem("user")).userID);
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120931085-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/perfil.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div id="loginPage">
+        <div id="top_bar">
+            <div id="container_left">
+                <a id="voltar" href="javascript: voltarPerfil()">Voltar</a>
+            </div>
+            <div id="container_right">
+                <img id="imagem_utilizador_perfil">
+                <a id="utilizador_nome"></a>
+                <a id="perfil_logout" href="javascript: apagar();">Logout</a>
+            </div>
+        </div>
+        <div id="analisarPortfolio" style="display:none">
+            <div id="div_foto">
+                <img id="imagem_utilizador_perfil2">
+            </div>
+            <div id="informacoes_portfolio">
+                <p id="inicio">Dados Pessoais </p>
+                <p id="autor"><span id="spans">Autor: </span></p>
+                <p id="nome_portfolio"><span id="spans">Nome do Portfolio: </span></p>
+                <p id="partilha"><span id="spans">Tipo de Partilha: </span></p>
+                <p id="descricao"><span id="spans">Descrição: </span></p>
+                <p id="motivacoes"><span id="spans">Motivações: </span></p>
+            </div>
+        </div>
+        <div id="seccao_downloads" style="display:none">
+            <div id="campos">
+                <div id="grupo">
+                    <img id="figuras" src="/image/folder.png">
+                    <p id="documentos_tag">Documentos</p>
+                </div>
+                <ul id="documentos_conteudos"></ul>
+            </div>
+            <div id="campos">
+                <div id="grupo">
+                    <img id="figuras" src="/image/folder.png">
+                    <p id="imagens_tag">Imagens</p>
+                </div>
+                <ul id="imagens_conteudos"></ul>
+            </div>
+            <div id="campos">
+                <div id="grupo">
+                    <img id="figuras" src="/image/folder.png">
+                    <p id="videos_tag">Videos</p>
+                </div>
+                <ul id="videos_conteudos"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

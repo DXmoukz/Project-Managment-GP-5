@@ -1,0 +1,159 @@
+html {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;  
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;   
+  background-image: url('/image/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: auto;
+}
+
+body{
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#parent{
+    height: auto;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+#formulario_criarConta{  
+    margin:0 auto;  
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    width: calc(80% - 23px);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#campo_nome,#campo_email, #campo_password,#campo_password2, #campo_data, #campo_alcunha,#campo_telefone{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    border-color: #696969;
+    border-style: ridge;
+    border-width: 1px;
+    color: #ADADAD;
+}
+
+#texto1{
+    padding: 10px;
+    color: #F05F40;
+    font-weight: bold;
+}
+
+#label1{
+    text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+}
+
+#submit{
+    height: 50px;
+    width: 60%;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F05F40;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit:hover{
+   color: #f69f8c;  
+}
+
+#ancoraNovaConta, #ancoraIniciarSessao{
+    padding: 5px;
+    color: #F05F40;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#titulo{
+    width: fit-content;
+    margin-left: 50px;   
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    float: left;
+    text-transform: uppercase;
+}
+
+#home{
+  color: #696969;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#home:hover{
+    color: #F05F40;
+}
+
+#termosEcondicoes{
+    font-size: 14px;
+}
+
+.tooltip{
+    position: relative;
+    width: 100%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: 1px ridge gray;
+ 
+    bottom: 110%;
+    left: 50%; 
+    margin-left: 0;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 1px;
+    border-style: ridge;
+    border-color: gray transparent transparent transparent;
+}

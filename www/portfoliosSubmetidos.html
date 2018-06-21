@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-120931085-1');
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/perfil.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).on("load resize ", function () {
+            var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+            $('.tbl-header').css({ 'padding-right': scrollWidth });
+        }).resize();
+    </script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div id="loginPage">
+        <div id="top_bar">
+            <div id="container_left">
+                <a id="voltar" href="javascript: voltarPerfil()">Voltar</a>
+            </div>
+            <div id="container_right">
+                <img id="imagem_utilizador_perfil">
+                <a id="utilizador_nome"></a>
+                <a id="perfil_logout" href="javascript: apagar();">Logout</a>
+            </div>
+        </div>
+        <div id="conteudo">
+            <h1 id="titulo">
+                <strong>Suporte</strong>
+            </h1>
+            <div class="tbl-header">
+                <table id="tabela_head" cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th>Titulo Portfolio</th>
+                            <th>Nome Proprietário</th>
+                            <th>Tipo de Partilha</th>
+                            <th>Estado</th>
+                            <th id="last"></th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="tbl-content">
+                    <table id="tabela" cellpadding="0" cellspacing="0" border="0">
+                        <tbody id="tabela_content">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120931085-1');
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div id="box">
+        <div id="mensagem">
+            <img id="check" src="/image/remove.png">
+            <h1 id="sucesso">Motivo de Rejeição!</h1>
+            <br>
+            <textarea rows="5" cols="50" name="motivoRejicao" id="campo_motivoRejicao"></textarea>
+            <br>
+            <button id="botaoRejeitarFinal" onclick="finalizarRejeitarPorfolio(this);">Rejeitar</button>
+        </div>
+    </div>
+</body>
+
+</html>

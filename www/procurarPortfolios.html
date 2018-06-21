@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-120931085-1');
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/portfolioPesquisa.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script type="text/javascript" src="script/metodo.js"></script>
+    <title>PortfoliU </title>
+</head>
+
+<body>
+    <div id="loginPage">
+        <div id="top_bar">
+            <div id="container_left">
+                <a id="voltar" href="index.html">PortfoliU</a>
+            </div>
+            <div id="container_center">
+                <input id="campo_pesquisa" placeholder="O que está à procura?">
+                <span id="groupButtons">
+                    <a id="apagarPesquisa" href="javascript: limparPesquisa();">
+                        <img id="apagar" src="/image/apagar.png">
+                    </a>
+                    <button id="action_pesquisa" onclick="pesquisar();">
+                        <span id="pesquisar">Pesquisar</span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div id="corpo">
+            <div id="filtros">
+                <header id="head_filtros">
+                    <p id="titulo">Filtros</p>
+                    <button id="limpar">Limpar Todos</button>
+                </header>
+                <ul id="group_filtros">
+                    <li id="filtro1">
+                        <a id="tipo_filtro_area" href="javascript: esconderAreas('tipo_filtro_area');"> Areas Cientificas
+                            <img id="down" src="/image/down.png">
+                        </a>
+                        <div id="areas"></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="conteudo"> 
+                <header id="head_conteudo">
+                    <div id="container">
+                        <p id="res">Resultados</p>
+                        <select id="order">
+                            <option>A-Z</option>
+                            <option>Z-A</option>
+                        </select>
+                        <a><img id="forma_lista" src="/image/lista.png"></a>
+                        <a><img id="forma_grid" src="/image/grid.png"></a>
+                    </div>
+                </header> 
+                <ul id="lista_portfolios"></ul>              
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120931085-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/perfil.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Partilha de Portfolios</title>
+</head>
+
+<body>
+    <div id="loginPage">
+        <div id="top_bar">
+            <div id="container_left">
+                <a id="voltar" href="perfilUtilizador.html">Voltar</a>
+            </div>
+            <div id="container_right">
+                <img id="imagem_utilizador_perfil">
+                <a id="utilizador_nome"></a>
+                <a id="perfil_logout" href="javascript: apagar();">Logout</a>
+            </div>
+        </div>
+        <div id="principal">
+            <div id="user_foto">
+                <img id="imagem_utilizador_perfil2">
+                <a id="utilizador_nome2"></a>
+                <div id="inicial">
+                    <a id="caixa2" href="javascript: alteracaoPassword();"><img id="editar_password" src="/image/password.png"></a>
+                    <a id="caixa2"><img id="editar_email" src="/image/email.png"></a>
+                    <a id="caixa2" href="javascript: alteracaoDadosPessoais();"><img id="editar_perfil" src="/image/editar_portfolio.png"></a>
+                </div>
+                <div id="alteracao_password">
+                    <input placeholder="PASSWORD ANTIGA" id="cmp_password_old" name="password" type="password">
+                    <br>
+                    <input placeholder="PASSWORD NOVA" id="cmp_password_new" name="password" type="password">
+                    <br>
+                    <input placeholder="REPETIR PASSWORD" id="cmp_password_confirm" type="password">
+                    <br>
+                    <p id="erroPassword"></p>
+                    <br>
+                    <a id="caixa" href="javascript: confirmarPassword();"><img id="confirmar_alteracoes" src="/image/confirmar.png"></a>
+                    <a id="caixa" href="javascript: cancelarPassword();"><img id="cancelar_alteracoes" src="/image/cancelar.png"></a>
+                </div>
+                <div id="alteracao_dados_pessoais">
+                    <div>
+                        <div id="perfil_nome">
+                            <p id="descritivos">Nome</p>
+                            <input id="editar_nome" type="text"></input>
+                        </div>
+                        <div id="perfil_data">
+                            <p id="descritivos">Data de Nascimento</p>
+                            <input id="editar_data" type="date"></input>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="perfil_universidade">
+                            <p id="descritivos">Universidade</p>
+                            <select id="editar_universidade" type="text"></select>
+                        </div>
+                        <div id="perfil_curso">
+                            <p id="descritivos">Curso</p>
+                            <select id="editar_curso"></select>
+                        </div>
+                    </div>
+                    <p id="erroPerfil"></p>
+                    <a id="caixa" href="javascript: confirmarDadosPessoais();"><img id="confirmar_alteracoes" src="/image/confirmar.png"></a>
+                    <a id="caixa" href="javascript: cancelarDadosPessoais();"><img id="cancelar_alteracoes" src="/image/cancelar.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; 
+}
+
+#homePage {
+  width: 100%;
+  height: 100vh; 
+  background-image: url('../image/header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#separador_home{
+  width: 60px;
+  height: 1px;
+  background-color: #F05F40;
+  border: 1px solid #F05F40;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#lista_home, #lista_home_last, #lista_home_utilizadorNome{
+    display: inline;
+    margin: 0 15px 0 15px;    
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+#lista_home_last{
+    display: inline;
+    margin: 0 15px 0 15px; 
+    margin-right: 0;  
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+#lista_home a, #lista_home_last a, #home{
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#home:hover, #iniciar:hover{
+    color: #F05F40;
+}
+
+#lista_home_utilizadorNome a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+#lista_home_especial{
+    display: inline-block;
+    width: 200px;   
+    height: 70%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#titulo{
+    width: fit-content;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 100px;   
+    font-size: 20px;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#mainNav{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+#topBox{
+    height: 70%;    
+    width: 100%;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#menu_home{
+    width: 70%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+    font-size: 15px; 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);   
+    float: right;
+}
+
+#menu_perfil{
+    list-style-type: none;  
+    display: inline-block;
+    padding: 0;
+}
+
+#menu_perfil li{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#chamativo{
+    padding-top: 40px;    
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#chamativo2{
+    padding-top: 60px;    
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+#descricao{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Merriweather';
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 17px;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+}
+
+#imagem_utilizador_home{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;    
+    padding-right: 10px;
+}
+
+#opcoes_perfil{
+    height: 80%;
+    width: 15%;
+    margin: 20px;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    float: left;
+}
+
+#lista_perfil{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#conteudo{   
+    margin: 20px; 
+    width: 75%;
+    height: 80%;
+    float: left;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+#perfil_logout{
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    margin-right: 5px;
+    margin-left: 5px; 
+    text-decoration: none;
+}
+
+#centrar{
+    display: inline-block;
+}
+
+#utilizador1{
+    margin: 0 auto;
+    width: 40%;
+    padding: 20px;
+}
+
+#criar{
+    display: block;
+    background-color: #F05F40;
+    margin: 0;
+    padding: 10px;
+    width: 70%;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/*
+    PAGINA SERVICOS
+*/
+#divisoes{
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 100px; 
+}
+
+#divisao{
+    width: 15%;
+    height: 55%;
+    margin: 5px;
+    background-color:#8FBC8F;    
+    display: inline-block;
+    text-decoration: none;
+}
+
+#opcoes{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding-top: 50px;
+}
+
+#opcao1{
+    display: inline-block;
+    background-color: #F05F40;
+    height: auto;
+    padding: 12px;
+    width: 15%;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    text-decoration: none;
+    background-color: #F05F40;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#opcao2{
+    display: inline-block;
+    background-color: #F05F40;
+    height: auto;
+    width: 20%; 
+    padding: 12px;   
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    text-decoration: none;
+    background-color: #F05F40;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#opcao3{
+    display: inline-block;
+    background-color: #F05F40;
+    height: auto;
+    width: 12%;
+    padding: 12px; 
+    margin-right: 15px; 
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    text-decoration: none;
+    background-color: #F05F40;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#documentos{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F05F40;
+    text-align: center;
+}
+
+#titulo_principal{
+    color: white;
+    font-family: 'Merriweather';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#titulo_secundario{
+    color: white;
+    font-family: 'Merriweather';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#descricao_docs{
+    color: white;    
+    font-family: 'Merriweather';
+    font-size: 16px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+#doc{
+    height: 40%;
+    width: 40%;
+}
+
+#ser_imagem{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#ser_video{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#img{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+}
+
+#protecao_dados{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F05F40;
+    text-align: center;
+}
+
+#protecao_dados{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#titulo_protecao{
+    color: #212429;
+    font-family: 'Merriweather';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#descricao_protecao{
+    color: #212429;  
+    text-align: center;
+    font-family: 'Merriweather';
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+#legenda{
+    color: #212429;  
+    font-family: 'Merriweather';
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+#faqs{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #F05F40;
+    text-align: center;
+}
+
+#titulo_principal{
+    color: white;
+    font-family: 'Merriweather';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+span{
+    color: black;
+    font-family: 'Merriweather';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#pergunta, #resposta{
+    color: white;    
+    font-family: 'Merriweather';
+    font-size: 16px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+#titulo_faq{
+    color: white;
+    font-family: 'Merriweather';
+    font-size: 30px;
+    font-weight: bold;    
+    text-transform: uppercase;
+}
+
+#email_box{
+    width: 50%;
+    height: 40%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#img_email{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+#titulo_estatisticas{
+    padding-top: 30px;
+    padding-bottom: 30px;  
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#subtitulo_estatisticas{
+    padding-top: 10px;  
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 16px;
+}
+
+#chartdiv{
+    background-color: rgba(255,255,255,0.5);
+}
+
+#opcao1:hover, #opcao2:hover, #opcao3:hover, #criar:hover{
+   color: #ffffff;  
+}

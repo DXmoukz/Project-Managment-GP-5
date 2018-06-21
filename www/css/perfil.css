@@ -1,0 +1,487 @@
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;  
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; 
+}
+
+#loginPage{
+  width: 100%;
+  height: 100vh; 
+  text-align: center;
+  background-image: url('/image/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#top_bar{
+    width: 100%;
+    height: 9%;
+    background-color: #F05F40;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;  
+    display: inline-block;  
+    margin-bottom: 0;
+}
+
+#container_left{    
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+#container_right{
+    width: 18%;
+    height: 100%;
+    display: block;
+    float: right;
+}
+
+
+#voltar{
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 50px;   
+    font-size: 20px;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#imagem_utilizador_perfil{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 10px;
+}
+
+#divisoes{
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 100px; 
+}
+
+#divisao1{
+    width: 15%;
+    height: 55%;
+    margin: 5px;
+    background-color:#8FBC8F;    
+    display: inline-block;
+    text-decoration: none;
+}
+
+#divisao2{
+    width: 15%;
+    height: 55%;
+    margin: 5px;
+    background-color: #A52A2A;    
+    display: inline-block;
+    text-decoration: none;
+}
+
+#divisao3{
+    width: 15%;
+    height: 55%;
+    margin: 5px;
+    background-color: #008B8B;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#divisao4{
+    width: 15%;
+    height: 55%;
+    margin: 5px;
+    background-color: #F4A460;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#divisao5{
+    width: 15%;
+    height: 55%;
+    margin: 5px;
+    background-color: #f0e68c;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#principal{
+    width: 100%;
+    height: calc(100vh - 10%);
+    margin-top: 0;
+}
+
+#perfil_logout{
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+    margin-right: 5px;
+    margin-left: 5px; 
+    text-decoration: none;
+}
+
+#perfil, #portfolio, #criarPortfolio, #editarPortfolio, #suporte, #adicionar{
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+}
+
+#subtitulos{
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+#user_foto{
+    width: 70%;
+    height: 90%;
+    margin: 10px;
+    margin-left: 30px;
+    background-color: white;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+#utilizador_nome2{
+    margin: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#caixa{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #F05F40;
+}
+
+#caixa2{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    margin-top: 60px;
+    border-radius: 50%;
+    background: #F05F40;
+}
+
+#alteracao_password, #alteracao_dados_pessoais{
+    display:none;
+}
+
+#cmp_password_old, #cmp_password_new, #cmp_password_confirm{
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-color: #696969;
+    border-style: ridge;
+    border-width: 1px;
+    color: #ADADAD;
+}
+
+#descritivos{
+    display: inline;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: #C0C0C0;
+}
+
+#editar_nome, #editar_data, #editar_universidade, #editar_curso{
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-color: #696969;
+    border-style: ridge;
+    border-width: 1px;
+    color: #ADADAD;
+    display: inline-block;
+}
+
+#imagem_utilizador_perfil2{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+}
+
+#perfil_nome, #perfil_email, #perfil_password, #perfil_data, #perfil_universidade, #perfil_curso{
+    display: inline-block;
+    width: 25%;
+    height: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#editar_foto, #editar_perfil, #editar_password, #editar_email, #confirmar_alteracoes, #cancelar_alteracoes{
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+#img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+#titulo{
+  color: #212429;;
+  font-family: 'Merriweather';
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#conteudo{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* TABELA CSS */
+
+#tabela, #tabela_head{
+  font-family: 'Roboto', sans-serif;
+  width:100%;
+  table-layout: fixed; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tbl-header{
+  width: 60%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+ }
+
+.tbl-content{
+  height:250px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 12px;  
+  color: black; 
+  text-transform: uppercase;
+}
+
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: black; 
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+#miniaturas{
+    height:  50px;
+    width: 50px;    
+}
+
+#tabelasSuporte{
+    width: 60%;
+    height: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 50px;
+}
+
+#utilizadorAdd{
+    display:inline-block;
+    width: 30%;   
+    margin-right: 80px;
+}
+
+#utilizadorRemove{
+    display:inline-block;
+    width: 30%;
+    margin-left: 80px;
+}
+
+#trocas{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+#miniaturas_support{
+    height: 25px;
+    width: 25px;
+}
+
+#tabelaSuporteAdd, #tabelaSuporteRemove{
+  font-family: 'Roboto', sans-serif;
+  width:100%;
+  table-layout: fixed; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#utilizadorAdd_content, #utilizadorRemove_content{
+  height: 80%;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.myButtonAceitar{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #228B22;
+    margin: 10px 20px 0 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.botaoVer, .myButtonEditar{
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F05F40;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.myButtonRejeitar{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #B22222;    
+    margin: 10px 20px 0 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+#analisarPortfolio{
+    width: 100%;
+    height: 35%;
+    margin-top: 30px;
+}
+
+#informacoes_portfolio{
+    float: left;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+}
+
+#div_foto{
+    float: left;
+    width: 10%;
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+
+#seccao_downloads{
+    width: 100%;
+    height: 35%;
+    margin-bottom: 10px;
+}
+
+#spans, #inicio{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#autor, #nome_portfolio, #partilha, #descricao, #motivacoes{
+    font-size: 13px;
+}
+
+#campos{
+    height: 100%;
+    width: 32%;
+    display: inline-block;
+    overflow-y : scroll;
+}
+
+#grupo{
+    width: 90%;
+}
+
+#documentos_tag, #imagens_tag, #videos_tag{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    color: black;
+    position: relative;
+    transform: translateY(-60%);
+}
+
+#figuras{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#videos_conteudos li, #imagens_conteudos li, #documentos_conteudos li{
+    list-style: none;
+    margin: 3px;
+    text-align: left;
+}
+
+#links{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+#links:hover{
+    color: #F05F40;;
+}

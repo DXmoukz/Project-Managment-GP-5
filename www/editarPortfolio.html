@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931085-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120931085-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <script type="text/javascript" src="./script/metodo.js"></script>
+    <title>PortfoliU - Editar Portfolio</title>
+</head>
+
+<body>
+    <div id="top_bar">
+        <div id="container_left">
+            <a id="voltar" href="javascript: voltarPerfil()">Voltar</a>
+        </div>
+        <div id="container_right">
+            <img id="imagem_utilizador_perfil">
+            <a id="utilizador_nome"></a>
+            <a id="perfil_logout" href="javascript: apagar();">Logout</a>
+        </div>
+    </div>
+    <h1 id="titulo">
+        <strong>Criar Portfolio</strong>
+    </h1>
+    <div id="parent">
+        <div id="pagina1">
+            <p>Dados Portfolio:</p>
+            <div id="groups">
+                <label id="label">Titulo do Portfolio</label>
+                <input id="editarPortfolioTitulo" type="text">
+                <br>
+            </div>
+            <div id="groups">
+                <label id="label">Descrição</label>
+                <textarea id="editarPortfolioDescricao" rows="5" cols="50"></textarea>
+                <br>
+            </div>
+            <div id="groups">
+                <label id="label">Motivações</label>
+                <textarea id="editarPortfolioMotivacoes" rows="5" cols="50"></textarea>
+                <br>
+            </div>
+            <div id="groups">
+                <label id="label">Areas Cientificas</label>
+                <select id="campo_editArea" multiple></select>
+                <br>
+            </div>
+            <div id="groups">
+                <label id="label">Tipo de Partilha:</label>
+                <select id="editarPortfolioPartilha">
+            <option value="Publico">Publico</option>
+            <option value="Privado"> Privado</option>
+            <option value="Protegido">Protegido</option>
+        </select>
+                <br>
+            </div>
+            </fieldset>
+            <input id="botao_seguinte" type="button" value="Editar" onclick="javascript:editarInformacoesPortfolio()">
+        </div>
+    </div>
+</body>
+
+</html>
